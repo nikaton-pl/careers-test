@@ -39,7 +39,6 @@ public class CareerPage extends BasePage {
     }
 
     public CareerPage locationInputTextSelectCountry(String inputText) {
-//        waitForElement(jobFoundTextMessage);
         locationInput.sendKeys(inputText);
         WebElement countryElementOfList = driver
                 .findElement(By.xpath("//ul[@id='location_list']/li[not(contains(text(),', " + inputText +
